@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-import sys
-l = len(sys.argv)
-arg = "arguments" if l - 1 > 1 else "argument"
-print("{} {}".format(l - 1, arg))
-if l > 1:
-    for i in range(1, l):
-        print("{}: {}".format(i, sys.argv[i]))
+from sys import argv
+if __name__ == "__main__":
+    length = len(argv)
+    arg = "arguments" if length - 1 > 1 else "argument"
+    print("{} {}".format(length - 1, arg))
+    if length > 1:
+        for i in range(1, length):
+            print("{}: {}".format(i, argv[i]))
