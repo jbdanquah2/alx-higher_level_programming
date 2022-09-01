@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-def update_dictionary(a_dictionary, key, value):
+def simple_delete(a_dictionary, key=""):
     if isinstance(a_dictionary, dict):
         new_dict = {}
         for k, v in a_dictionary.items():
             new_dict[k] = v
-        new_dict[key] = value
+        del new_dict[k]
     return new_dict
