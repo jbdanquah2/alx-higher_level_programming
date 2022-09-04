@@ -2,6 +2,7 @@
 from sys import argv, exit
 from calculator_1 import add, sub, div, mul
 
+
 def calculation():
     if __name__ == "__main__":
         if len(argv) != 4:
@@ -19,5 +20,6 @@ def calculation():
         op = argv[2]
 
         print("{:d} {:s} {:d} = {:d}".format(a, op, b, ops[op](a, b)))
+
 
 calculation()
