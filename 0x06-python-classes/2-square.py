@@ -10,8 +10,9 @@ class Square:
         Args:
         param1: size is a private attribute of type int
         """
-        if size < 0:
-            raise TypeError("size must be >= 0")
-        elif not isinstance(size, int):
+        if not isinstance(size, int):
             raise ValueError("size must be an integer")
+        elif size < 0:
+            raise TypeError("size must be >= 0")
+
         self.__size = size
