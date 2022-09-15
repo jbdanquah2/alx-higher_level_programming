@@ -30,7 +30,6 @@ class Square:
             [print("#", end="") for k in range(0, self.__size)]
             print("")
 
-
     @property
     def size(self):
         return (self.__size)
@@ -55,4 +54,3 @@ class Square:
                 not all(number >= 0 for number in value)):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
-
