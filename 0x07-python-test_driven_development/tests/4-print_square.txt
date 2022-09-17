@@ -1,0 +1,59 @@
+===================
+4-print_square
+===================
+
+This is module is the unit test for the print_square function
+
+===================
+
+::
+    >>> print_square = __import__("4-print_square").print_square
+    >>> print_square(4)
+    ####
+    ####
+    ####
+    ####
+
+works with normal integers
+::
+    >>> print_square(10)
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+
+works with size = 0
+::
+    >>> print_square(0)
+    
+
+works with size = 1
+::
+    >>> print_square(1)
+    #
+
+ValueError if size is less than 0
+::
+    >>> print_square(-1)
+    Traceback (most recent call last):
+    ValueError: size must be >= 0
+
+TypeError if size is not an integer
+::
+    >>> print_square("size")
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+NameError if an undeclared value is supplied
+::
+    >>> print_square(four)
+    Traceback (most recent call last):
+    NameError: name 'four' is not defined
+
+::
