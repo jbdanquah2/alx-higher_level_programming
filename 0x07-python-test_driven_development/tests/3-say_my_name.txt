@@ -1,0 +1,49 @@
+=================
+say_my_name
+=================
+
+This module is the unit test for the say_my_name function
+
+=================
+
+::
+    >>> say_my_name = __import__("3-say_my_name").say_my_name
+    >>> say_my_name("John", "Smith")
+    My name is John Smith
+
+Works with only first_name provided
+::
+    >>> say_my_name("Bob")
+    My name is Bob 
+
+TypeError when first_name is not a string
+::
+    >>> say_my_name(12, "White")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+TypeError when last_name is not a string
+::
+    >>> say_my_name("Mark", 12)
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
+
+TypeError where first_name and last_name are not string
+::
+    >>> say_my_name(12, 13)
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+TypeError when first_name is None
+::
+    >>> say_my_name(None, "Smith")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+TypeError when say_my_name is called with no arguments
+::
+    >>> say_my_name(None)
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+::
