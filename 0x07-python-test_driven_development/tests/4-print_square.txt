@@ -2,7 +2,7 @@
 4-print_square
 ===================
 
-This is module is the unit test for the print_square function
+This is module is the interactive test module for the print_square function
 
 ===================
 

@@ -2,7 +2,7 @@
 0-add_integer
 =================
 
-This is the unit test for the add_integer function
+This is the interactive test module for the add_integer function
 
 =================
 

@@ -1,8 +1,8 @@
 ======================
-5-text_square
+5-text_indentation
 ======================
 
-Print square  module is the unit test that verifies print of '#' in a row
+This module is the interactive test module for the text_indentation function
 
 =====================
 

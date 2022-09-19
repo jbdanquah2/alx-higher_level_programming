@@ -2,7 +2,7 @@
 2-matrix_divided
 ======================
 
-This module is the the unit test for the matrix_divided function
+This module is the the interactive test module for the matrix_divided function
 
 =====================
 
