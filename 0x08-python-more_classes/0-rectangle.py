@@ -4,7 +4,7 @@ that defines a rectangle
 """
 
 
-clas Reactangle:
+class Rectangle:
     """Defines a rectangle
     """
     pass
