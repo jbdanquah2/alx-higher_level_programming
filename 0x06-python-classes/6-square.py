@@ -11,8 +11,8 @@ class Square:
         param1: size is a private attribute of type int
         param2: positon is of type tuple for the position of the square
         """
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     def area(self):
         """Returns the area of a square"""
@@ -26,7 +26,7 @@ class Square:
 
         [print("")for i in range(0, self.__position[1])]
         for i in range(0, self.__size):
-            [print("_", end="") for j in range(0, self.__position[0])]
+            [print(" ", end="") for j in range(0, self.__position[0])]
             [print("#", end="") for k in range(0, self.__size)]
             print("")
 
