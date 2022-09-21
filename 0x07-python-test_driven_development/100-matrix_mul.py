@@ -46,4 +46,5 @@ def matrix_mul(m_a, m_b):
         raise TypeError("m_a and m_b can't be multiplied")
 
     # using list comprehension to multiply the matrices
-    return [[sum(a * b for a, b in zip(X_row, Y_col)) for Y_col in zip(*m_b)] for X_row in m_a]
+    return [[sum(a * b for a, b in zip(X_row, Y_col))
+            for Y_col in zip(*m_b)] for X_row in m_a]
