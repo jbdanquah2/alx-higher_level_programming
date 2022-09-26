@@ -1,14 +1,6 @@
 #!/usr/bin/python3
-"""This module contains a class the inherits
-from a list obj.
-"""
-
-
 class MyList(list):
-    """This class inherits from a list obj
-    """
+    """Type class MyList  with print_sorted function"""
 
     def print_sorted(self):
-        """Prints the elements of a list in ascending order
-        """
-        print("{}".format(sorted(self)))
+        print(sorted(self))
