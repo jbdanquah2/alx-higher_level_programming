@@ -126,10 +126,3 @@ TypeError print_sorted when method is given 1 argument
     []
 
 ::
-
-    >>> my_list = MyList([3, "Edward", "Ortiz", 2])
-    >>> my_list.print_sorted()
-    Traceback (most recent call last):
-    TypeError: unorderable types: str() < int()
-
-::
