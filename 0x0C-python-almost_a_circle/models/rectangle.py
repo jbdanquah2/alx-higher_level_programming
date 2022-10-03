@@ -68,10 +68,10 @@ class Rectangle(Base):
         self.__x = x
 
     @property
-    def y(self, y):
+    def y(self):
         """y getter function"""
 
-        return y
+        return self.__y
 
     @y.setter
     def y(self, y):
@@ -96,3 +96,10 @@ class Rectangle(Base):
             for j in range(self.__width):
                 print("#", end="")
             print("")
+
+    def __str__(self):
+        """str function"""
+
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x,
+                                                       self.y, self.width,
+                                                       self.height)
