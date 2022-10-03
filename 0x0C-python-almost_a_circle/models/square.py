@@ -7,7 +7,6 @@ from models.rectangle import Rectangle
 class Square(Rectangle):
     """This is the Square class"""
 
-
     def __init__(self, size, x=0, y=0, id=None):
         """This is the init function"""
 
@@ -16,4 +15,5 @@ class Square(Rectangle):
     def __str__(self):
         """str function"""
 
-        return ("[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.width))
+        return ("[Square] ({}) {}/{} - {}".format(self.id, self.x,
+                                                  self.y, self.width))
