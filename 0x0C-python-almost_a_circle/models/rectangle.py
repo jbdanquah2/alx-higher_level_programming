@@ -105,7 +105,7 @@ class Rectangle(Base):
                                                        self.y, self.width,
                                                        self.height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Update arguments by the order of args provided"""
 
         if args and len(args) != 0:
