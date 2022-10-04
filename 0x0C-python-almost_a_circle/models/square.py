@@ -8,7 +8,9 @@ class Square(Rectangle):
     """This is the Square class"""
 
     def __init__(self, size, x=0, y=0, id=None):
-        """This is the init function"""
+        """This is the init function.
+        It inherits the Rectangle class
+        """
 
         super().__init__(size, size, x, y, id)
 
@@ -22,7 +24,7 @@ class Square(Rectangle):
     def size(self):
         """getter fucntion for size"""
 
-        return self.width
+        return self.size
 
     @size.setter
     def size(self, value):
