@@ -6,6 +6,5 @@ exports.esrever = function (list) {
     newList[i] = list[j];
     j++;
   }
-  console.log(newList);
   return newList;
 };
