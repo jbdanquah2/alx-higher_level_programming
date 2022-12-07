@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""This module deletes all state objects
+with a in it
+"""
 
 import sys
 from sqlalchemy import create_engine
